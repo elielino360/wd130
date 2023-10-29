@@ -15,10 +15,13 @@ nav a {
 #hero-msg h1 {
     text-align: center;
     color: white;
+    font-family: molli, Yanone Kaffeesatz, Helvetica;
 }
 #hero-msg h4 {
     text-align: center;
     color: white;
+    font-family: molli, Yanone Kaffeesatz, Helvetica;
+
 }
 .button-box {
     text-align: center;
@@ -38,6 +41,7 @@ body {
 }
 header {
     background-color: rgba(123, 142, 238, 0.881);
+    font-family: Mooli,Yanone Kaffeesatz, Helvetica, sans-serif; 
 }
 nav a:hover {
     background-color: rgb(5, 38, 27);
@@ -75,6 +79,7 @@ nav a:hover {
     font-size: 2em;
     line-height: 1.5em;
     padding: 35px;
+    font-family: Yanone Kaffeesatz, Helvetica, sans-serif;;
 
 }
 .msg h2 {
@@ -83,6 +88,7 @@ nav a:hover {
 .msg p {
     color: aliceblue;
     padding-bottom: 15px;
+    font-family: Yanone Kaffeesatz, Helvetica, sans-serif; 
 
 }
 footer {
@@ -120,6 +126,7 @@ footer a:hover {
 }
 footer p {
     font-size: 1.2em;
+    font-family: Yanone Kaffeesatz, Helvetica, sans-serif; ;
 
 }
 footer p a:hover {
@@ -156,6 +163,7 @@ main section img {
 header {
     display: grid;
     grid-template-columns: 150px auto;
+    font-family: molli;
 }
 
 nav {
