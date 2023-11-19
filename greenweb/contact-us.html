@@ -50,7 +50,46 @@
             <a class="img-button" href="index.html">Home Page</a>
         </div>
         <div id="page2-section2">
-            <img class="section2-img" src="" alt="">
+            <div id="feedback"></div>
+            <form acction="/contactus.html" method="post">
+                <ul>
+                    <li>
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="user_name"/>
+            
+                    </li>
+                    <li>
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" email="email" />
+        
+                    </li>
+                    <li>
+                        <label for="tel">Enter Your Tel No:</label>
+                        <input type="tel" id="tel" tel="tel"/>
+        
+                    </li>
+                    <li>
+                        <label for="message">Enter your Message:</label>
+                        <textarea id="message" name="user_message"></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Send your Message</button>
+            
+                    </li>
+                </ul>
+        
+            </form>
+            <a id="form-button" href="about-us.html">About Us</a>
+            <div id="page2-section3">
+                <h2>Connect with Us on Social Media</h2><br>
+                <p>
+                    Stay updated on the latest in web development trends, industry insights, and our work by connecting with us on social media. Follow us on [Social Media Platforms] for valuable content and updates.</p>
+                <br><h2>Your Feedback Matters</h2>
+                <p>
+                    We value your feedback and use it as a compass to continually improve our services. If you have had an experience with Green Web services, we invite you to share your thoughts. Your comments, suggestions, and testimonials help us grow and serve you better.</p>
+                <br><p>Thank you for considering Green Web. We look forward to connecting with you and exploring how we can bring your digital vision to life. Your success is our priority, and we're here to support you every step of the way.</p>
+
+            </div>
 
         </div>
 
@@ -75,6 +114,22 @@
     </footer>
 
     </div>
-    
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>   
 </body>
 </html>
