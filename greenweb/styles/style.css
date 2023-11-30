@@ -15,9 +15,16 @@ nav a {
     text-align: center;
     padding: 35px;
     color:#E5E5E5;
+
    }
    nav {
     background-color: #14213D;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+
 }
 .logo {
     width: 100px;
@@ -32,6 +39,7 @@ nav a {
     grid-template-columns: 1fr 3fr 1fr;
     margin-top: -100px;
     background-color: #14213dad;
+    margin-top: 30px;
 }
 #hero-img { 
     width: 100%;
@@ -49,6 +57,7 @@ nav a {
     margin-top: 400px;
     color: white;
     font-size: 20px;
+    
     
 }
 
